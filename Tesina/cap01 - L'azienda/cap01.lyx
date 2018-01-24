@@ -1087,8 +1087,9 @@ Descrizione:
  Tale processo specifica come il responsabile del settore di amministrazione,
  quotidianamente, segna in un registro le presenze dei dipendenti e le ore
  di lavoro.
- Tale registro viene utilizzato dal responsabile del settore di contabilità
- per calcolare lo stipendio da erogare al personale mensilmente.
+ Tale registro viene inviato ad un commercialista esterno che effettua formalmen
+te il calcolo degli stipendi dei vari dipendenti.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1103,7 +1104,7 @@ tale diagramma definisce le attività da svolgere per realizzare un processo
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/Gestione dipendentiActivity.png
+	filename img/Gestione dipendenti.png
 	scale 50
 
 \end_inset
