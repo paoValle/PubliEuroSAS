@@ -274,6 +274,12 @@ La modellazione del processo prevede una sola pool.
  
 \end_layout
 
+\begin_layout Standard
+Grazie al sito creato per l'azienda, infine, è stato possibile creare un
+ nuovo processo di e-commerce, analizzato nella sezione Nuovi Processi.
+ 
+\end_layout
+
 \begin_layout Subsection
 Servizio Stampa
 \end_layout
@@ -294,13 +300,9 @@ e e pertanto non si ha la figura del responsabile della logistica in ingresso.
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Graphics
 	filename img/ServizioStampa.png
-	scale 45
+	scale 40
 
 \end_inset
 
@@ -423,6 +425,14 @@ La modellazione di tale processo prevede due pool: una relativa all'azienda,
 
 \begin_layout Section
 Nuovi processi
+\end_layout
+
+\begin_layout Standard
+Effettuando l'analisi dei processi dell'azienda, si è notato che manca la
+ vendita online.
+ In effetti si è ritentuto opportuno introdurre tale nuovo processo in quanto
+ risulta indispensabile per la crescita dell'azienda stessa.
+ In questo modo è possibile acquisire clienti lontani geograficamente
 \end_layout
 
 \begin_layout Subsection
