@@ -274,6 +274,12 @@ La modellazione del processo prevede una sola pool.
  
 \end_layout
 
+\begin_layout Standard
+Grazie al sito creato per l'azienda, infine, è stato possibile creare un
+ nuovo processo di e-commerce, analizzato nella sezione Nuovi Processi.
+ 
+\end_layout
+
 \begin_layout Subsection
 Servizio Stampa
 \end_layout
@@ -421,8 +427,1179 @@ La modellazione di tale processo prevede due pool: una relativa all'azienda,
 Nuovi processi
 \end_layout
 
+\begin_layout Standard
+Durante la fase di analisi e studio dei processi di business di PublieuroSaS,
+ e anche su esplicita richiesta del committente, abbiamo riscontrato la
+ necessità di rendere possibile, ad un qualisasi cliente, la creazione di
+ un ordine tramite portale online.
+ L'azienda possiede già un sito web, che risulta essere però spartano, non
+ aggiornato e non in linea con i tempi.
+ In tal modo, si è resa necessaria la creazione di un nuovo processo di
+ business, che andasse ad aggiungersi ai precedenti, e non a modificare
+ il già presente flusso di 
+\begin_inset Quotes eld
+\end_inset
+
+vendita
+\begin_inset Quotes erd
+\end_inset
+
+ di prodotti e servizi.
+ Nel successivo paragrafo, quindi, sarà presentato tale processo, le scelte
+ che sono alla sua base e la modellazione fatta tramite BonitaBPM, strumento
+ che ha permesso anche la simulazione, in toto, del flusso, così da verificarne
+ la fattibilità e efficacia.
+\end_layout
+
 \begin_layout Subsection
 Vendita e Stampa on-line
+\end_layout
+
+\begin_layout Standard
+Il processo si è presentato abbastanza complesso, dato l'elevato numero
+ di task e figure coinvolte.
+ Esso permette, in un ciclo end-to-end sul cliente, di creare un ordine
+ online.
+ In particolare, esso permette due 
+\begin_inset Quotes eld
+\end_inset
+
+modalità
+\begin_inset Quotes erd
+\end_inset
+
+ di servizio, definite 
+\begin_inset Quotes eld
+\end_inset
+
+STAMPA
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+STAMPA e VENDITA
+\begin_inset Quotes erd
+\end_inset
+
+.
+ La prima riguarda il caso in cui è il cliente a fornire il prodotto su
+ cui stampare, mentre la seconda riguarda il caso in cui il cliente sceglie
+ anche dal catalogo online il prodotto su cui vuole stampare.
+ Tramite bonita sono stati implementati e testati queti due possibili flussi.
+ Infatti, nel caso in cui il cliente chiedesse di avere il servizio 
+\begin_inset Quotes eld
+\end_inset
+
+STAMPA
+\begin_inset Quotes erd
+\end_inset
+
+ deve fornire anche una descrizione del prodotto che intende fornire, informazio
+ne che raggiungerà l'amministratore dell'azienda, il quale deciderà sulla
+ fattibilità o meno dell'ordine e proporrà un 
+\begin_inset Quotes eld
+\end_inset
+
+preventivo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Questo sarà accettato o meno dal cliente.
+ In caso in cui, invece, il cliente chiedesse il servizio 
+\begin_inset Quotes eld
+\end_inset
+
+STAMPAeVENDITA
+\begin_inset Quotes erd
+\end_inset
+
+, gli verrà presentato il catalogo (simulato da 4 oggetti) per scegliere
+ il tipo di prodotto.
+ Data l'assenza dell'indecisione sulla fattibilità della cosa, in questo
+ caso il preventivo viene presentato automaticamente, calcolato tramite
+ script in base ai dati dell'ordine.
+ Una volta presentato al cliente, questi potrà decidere se accettare o meno.
+ Ancora una volta, come da espressa richiesta del proprietario di PubliEuroSaS,
+ sarà l'amministratore ad avere l'ultima parola circa la validazione o meno
+ dell'ordine.
+ Da qui in poi i due possibili flussi sono riuniti, il cliente viene avvisato
+ per mail (simulato tramite il software FakeSMTP) dell'esito dell'ordine
+ e si provvederà, come già accade per gli ordini 
+\begin_inset Quotes eld
+\end_inset
+
+analogici
+\begin_inset Quotes erd
+\end_inset
+
+, con il normale flusso aziendale.
+ Una nota 
+\begin_inset Quotes eld
+\end_inset
+
+negativa
+\begin_inset Quotes erd
+\end_inset
+
+ potrebbe essere il passaggio macchinoso cliente-amministratore fatto per
+ quanto riguarda la proposta del preventivo, l'eventuale descrizione del
+ prodotto su cui applicare la stampa, l'accettazione del preventivo da parte
+ del cliente e l'ultima approvazione dell'amministratore.
+ Come si può notare, ci si 
+\begin_inset Quotes eld
+\end_inset
+
+passa la palla
+\begin_inset Quotes erd
+\end_inset
+
+ più volte.
+ Tale soluzione è dovuta purtroppo a richieste esplicite del committente,
+ che ha espressamente dichiarato di voler sempre avere l'ultima parola su
+ ogni ordine prima di passarlo al reparto successivo.
+ 
+\end_layout
+
+\begin_layout Standard
+Riportiamo di seguito il diagramma BPMN del processo, realizzato in Bonita:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/nuovo_processo_bpmn.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo Bonita 
+\begin_inset Quotes eld
+\end_inset
+
+Vendita online
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per la realizzazione e simulazione, sono state create varie form per il
+ completo svolgimento del processo.
+ Nelle schermate seguenti ne vedremo alcune con annessa descrizione.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_nuovoOrdine.PNG
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui il cliente avvia il processo, creando un nuovo ordine.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_descrizioneProdotto.PNG
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui il cliente comunica una descrizione del prodotto su cui vuol
+ far stampare (in caso in cui ha scelto TIPO SERVIZIO = STAMPA).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_sceltaProdotto.PNG
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui il cliente sceglie un prodotto dal catalogo (in caso in cui
+ ha scelto TIPO SERVIZIO = STAMPAeVENDITA).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_adminPreventivo.PNG
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui l'amministratore definice un preventivo, sulla base delle informazi
+oni sull'ordine.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_clienteAccetta.PNG
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui il cliente può visualizzare il preventivo e decidere se piazzare
+ o meno l'ordine.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/form_convalidaOrdine.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Form con cui l'amministratore può confermare la creazione dell'ordine.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I successivi task, invece, sono stati lasciati vuoti in quanto non rappresentava
+no una vera e propria interazione tramite form, ma piuttosto un semplice
+ bottone di 
+\begin_inset Quotes eld
+\end_inset
+
+flag
+\begin_inset Quotes erd
+\end_inset
+
+, cliccato dall'attore giusto nel momento in cui avesse terminato il proprio
+ task.
+ Gli attori previsti nel processo sono ben cinque: cliente, amministratore,
+ resp.
+ logistica in uscita, resp.
+ logistica in ingresso e operaio.
+ Per la simulazione sono stati creati altrettanti utenti in Bonita, e ogni
+ swimline è stata assegnata ad un utente in base al suo id.
+ L'user id è stato ottenuto tramite le API di Bonita, in particolare all'indiriz
+zo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+http://localhost:8080/bonita/API/identity/user?f=userName=myUsername
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+mentre l'assegnaziazione vera è propria è stata fatto tramite 
+\begin_inset Quotes eld
+\end_inset
+
+filtro attore
+\begin_inset Quotes erd
+\end_inset
+
+ basata su id.
+\end_layout
+
+\begin_layout Standard
+Per permettere al processo, e ai suoi task, di gestire informazioni condivise,
+ è stata creata una variabile di processo, definita nel 
+\series bold
+BDM
+\series default
+.
+ Il 
+\series bold
+business object
+\series default
+ è 
+\emph on
+ordineServizio
+\emph default
+, e la sua struttura è la seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="19" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attributo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+idCliente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nomeCliente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cognomeCliente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+indirizzo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+modalitaConsegna
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tipoServizio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fileGrafico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+larghezzaStampa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DOUBLE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lunghezzaStampa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DOUBLE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+prioritario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOOLEAN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tipoStampa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+qta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DOUBLE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+idProdotto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+descrizioneProdotto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+preventivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DOUBLE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+approvato
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOOLEAN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dataOrdine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STRING
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+accettato
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOOLEAN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La variabile creata, invece, ha nome 
+\emph on
+ordine
+\emph default
+.
+ Insieme a ciò, sono state definite diverse variabili di processo, utilizzate
+ durante il flow per capire in quale ramo ci si deve muovere.
+ La variabile ordine è stata passata tramite 
+\series bold
+contratto
+\series default
+ ad ogni form, mentre le variabili di processo sono state aggiornate tramite
+ 
+\series bold
+operazioni
+\series default
+ a fine di ogni task.
+ Le operazioni sono state realizzate mediante script 
+\series bold
+groovy
+\series default
+.
+ Il task di notifica interagisce con il programma FakeSMTP, simulando l'invio
+ di una mail al cliente, con l'esito della creazione dell'ordine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/emailServer.PNG
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FakeSMTP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/emailOrdineNonApprovato.PNG
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mail con esito 
+\begin_inset Quotes eld
+\end_inset
+
+ordine non approvato
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/emailOrdineApprovato.PNG
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mail con esito 
+\begin_inset Quotes eld
+\end_inset
+
+ordine approvato
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per le form di 
+\begin_inset Quotes eld
+\end_inset
+
+visualizzazione
+\begin_inset Quotes erd
+\end_inset
+
+, in cui si è dovuto mostrare la variabile ordine in una form, questa è
+ stata acceduta tramite API di BonitaBPM, come mostrato qui di seguito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/variabili_api_bonita.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per inizializzare la variabile ordine è stato realizzato il seguente script,
+ che setta alcuni campi come la data:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import java.text.SimpleDateFormat
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def ordineServizioVar = new com.company.model.ordineServizio()
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.nomeCliente = ordineInput.nomeCliente
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.cognomeCliente = ordineInput.cognomeCliente
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.indirizzo = ordineInput.indirizzo
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.modalitaConsegna = ordineInput.modalitaConsegna
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.tipoServizio = ordineInput.tipoServizio
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.fileGrafico = ordineInput.fileGrafico
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.larghezzaStampa = ordineInput.larghezzaStampa.toFloat()
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.lunghezzaStampa = ordineInput.lunghezzaStampa.toFloat()
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.prioritario = ordineInput.prioritario
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.tipoStampa = ordineInput.tipoStampa
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.qta = ordineInput.qta
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Retrieve current process instance
+\end_layout
+
+\begin_layout Plain Layout
+
+def processInstance = apiAccessor.processAPI.getProcessInstance(processInstanceId)
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+def date = new Date()
+\end_layout
+
+\begin_layout Plain Layout
+
+def sdf = new SimpleDateFormat("dd/MM/yyyy")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.setIdCliente(String.valueOf(processInstance.startedBy))
+\end_layout
+
+\begin_layout Plain Layout
+
+ordineServizioVar.setDataOrdine(sdf.format(date))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+return ordineServizioVar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tramite una variabile 
+\begin_inset Quotes eld
+\end_inset
+
+error
+\begin_inset Quotes erd
+\end_inset
+
+ è stata gestita la visualizzazione di eventuali errori nella form.
+ Tale errori, tra l'altro, potevano essere anche le violazioni dei 
+\series bold
+constraint
+\series default
+ aggiunti in varie form, come i controlli sugli input numerici (che potevano
+ o meno essere negativi o zero):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/error_bonita.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/error_bonita2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tramite uno script creato ad hoc, infine, è stato possibile realizzare degli
+ input select nelle form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/select_bonita.PNG
+
+\end_inset
+
+
 \end_layout
 
 \end_body

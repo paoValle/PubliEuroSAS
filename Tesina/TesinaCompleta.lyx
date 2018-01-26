@@ -383,13 +383,13 @@ filename "cap01 - L'azienda/cap01.lyx"
 \end_layout
 
 \begin_layout Chapter
-Nome capitolo
+Business Process Re-engineering
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "cap02/cap02.lyx"
+filename "cap02 - Reingegnerizzazione/cap02.lyx"
 
 \end_inset
 
