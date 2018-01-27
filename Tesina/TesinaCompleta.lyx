@@ -397,13 +397,13 @@ filename "cap02 - Reingegnerizzazione/cap02.lyx"
 \end_layout
 
 \begin_layout Chapter
-Nome capitolo
+Sistema informatico: OpenERP
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "cap03/cap03.lyx"
+filename "cap03 - ERP/cap03.lyx"
 
 \end_inset
 
