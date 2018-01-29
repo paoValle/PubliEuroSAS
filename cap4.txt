@@ -1,0 +1,80 @@
+SOLUZIONE 1
+	Proponiamo acquisto licenza di invoicex, senza cambiare erp. Sistema minimo pr il badging. Pagine social per marketing.
+	STRUMENTI SW/HW:
+		- SISTEMA BADGE 250€
+		- TABLET per OPERATORE MAGAZZINO: 150€
+		- INVOICEX PROFESSIONAL: 69€+iva/anno (84,18euro)
+		- CREAZIONE PAGINE SOCIAL (IG+FB): 50€ per 1 giorno di lavoro
+	FIGURE PROFESSIONALI:
+		- TECNICO IT per la formazione: 80€ al giorno per 1 settimana(3ore/gg)
+		- TECNICO SISTEMISTA per l'installazione della macchina badge: 80€ per 1 giorno di lavoro
+		- SOCIAL MEDIA MANAGER per formazione: 40€ per 2 ore di lavoro
+		- Project Manager: 100€ al giorno per 10gg
+	TOTALE: 2054,18€
+SOLUZIONE 2
+	Tutto quello offerto dalla soluzione precedente, ma con ODOO.
+	STRUMENTI SW/HW:
+		- SISTEMA BADGE: 250€
+		- TABLET per OPERATORE MAGAZZINO: 150€
+		- ODOO, in locale gratuito: 0€
+		- UPS: 120€
+		- HDD in RAID: 2x1TB a 150€
+		- CREAZIONE PAGINE SOCIAL (IG+FB): 50€ per 1 giorno di lavoro
+	FIGURE PROFESSIONALI:
+		- TECNICO IT per la formazione: 80€ al giorno per 5 giorni(3ore/gg)
+		- TECNICO SISTEMISTA per l'installazione della macchina badge: 80€ per 1 giorno di lavoro
+		- SOCIAL MEDIA MANAGER per formazione: 40€ per 2 ore di lavoro
+		- Consulente ODOO per la formazione (moduli: SALES and MANAGEMENT, INVENTORY MANAGEMENT, INVOICING MANAGEMENT, PURCHASE MANAGEMENT, CALENDAR): 60€ al giorno per 5 giorni
+		- Esperto ODOO per la configurazione: 100€ al gg per 5 gg
+		- Project Manager: 100€ al giorno per 15gg
+	TOTALE: 4060€
+SOLUZIONE 3
+	Uguale alla sol.2 ma con l'aggiunta di CRM e E-COMMERCE
+	STRUMENTI SW/HW:
+		- SISTEMA BADGE: 250€
+		- TABLET per OPERATORE MAGAZZINO: 150€
+		- ODOO in CLOUD: 1704€/anno
+		- UPS: 120€
+		- CREAZIONE PAGINE SOCIAL (IG+FB): 50€ per 1 giorno di lavoro
+		- DOMINIO: 10 euro all'anno
+	FIGURE PROFESSIONALI:
+		- TECNICO IT per la formazione: 80€ al giorno per 5 giorni(3ore/gg)
+		- TECNICO SISTEMISTA per l'installazione della macchina badge: 80€ per 1 giorno di lavoro
+		- SOCIAL MEDIA MANAGER per formazione: 40€ per 2 ore di lavoro
+		- Consulente ODOO per la formazione (moduli: SALES and MANAGEMENT, INVENTORY MANAGEMENT, INVOICING MANAGEMENT, PURCHASE MANAGEMENT, CALENDAR): 60€ al giorno per 5 giorni
+		- Esperto ODOO per la configurazione: 100€ al gg per 7 gg
+		- Project Manager: 100€ al giorno per 20gg
+	TOTALE: 5614€
+	
+Capitolo 4:
+	- Studio di fattibilità con l'elenco delle proposte. Per ogni proposta si realizza il cronoprogramma
+	- Analisi dei rischi per tutte le proposte
+	
+	
+	
+PROGETTO
+Analisi funzionale 10gg
+	Intervista 3gg
+	Analisi dei requisiti 2gg
+	Modellazione UML 5gg
+Modellazione soluzioni 10gg
+	Modellazione BPMN 3gg
+	Simulazione BPMN 3gg
+	Controllo delle soluzioni trovate 3gg
+	Scelta ERP 1gg
+Implementazione 10gg
+	Installazione ODOO e scelta moduli 2gg
+	Config. moduli 5gg
+	Test esecuzione processi con ODOO 3gg
+Analisi del progetto 10gg
+	Fit Gap Analysis 1gg
+	Validazione KPI 4gg
+	Studio di fattibilità 5gg
+Documentazione 12gg
+	Scrittura documento 10gg
+	Scrittura slide 2gg
+Validazione  5gg
+	Presentazione prototipo 3gg
+	Raccolta feedback 2gg
+	
+TOTALE 57gg di lavoro
