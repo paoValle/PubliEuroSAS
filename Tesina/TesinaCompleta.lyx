@@ -64,7 +64,7 @@ morecomment=[s]{--}
 
 \fancyhead[RO,LE]{\bfseries \leftmark}
 \fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Elaborato di ASE: Architettura dei Sistemi di Elaborazione}
+\fancyfoot[LO,CE]{Elaborato di SI: Sistemi Informativi}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \cfoot{}
@@ -189,6 +189,26 @@ Modificare il numero del gruppo nel tag title
 \end_layout
 
 \begin_layout Standard
+
+\lang american
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AddToShipoutPicture{
+\backslash
+BackgroundPicture{bg.png}{0}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -235,21 +255,15 @@ status open
 \backslash
 author{Galli Antonio - Mat.
  M63/0721
-\end_layout
-
-\begin_layout Plain Layout
-
+\backslash
 
 \backslash
-and Gravina Michela - Mat.
+Gravina Michela - Mat.
  M63/0708
-\end_layout
-
-\begin_layout Plain Layout
-
+\backslash
 
 \backslash
-and Valletta Paolo - Mat.
+Valletta Paolo - Mat.
  M63/0723
 \end_layout
 
@@ -288,6 +302,26 @@ status open
 
 \backslash
 setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AddToShipoutPicture{
+\backslash
+BackgroundPicture{bg2.png}{0}}
 \end_layout
 
 \end_inset
