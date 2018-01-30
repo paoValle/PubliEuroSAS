@@ -420,6 +420,1289 @@ Adattamento processo all'ERP
 \end_layout
 
 \begin_layout Section
+Soluzione informatica : Sistema ERP
+\end_layout
+
+\begin_layout Standard
+La soluzione informatica da noi scelta come supporto al sistema informativo
+ aziendale e come mezzo di informatizzazione dei processi aziendali consiste
+ nell'utilizzo di un sistema ERP ( Enterprise Resource Planning ), realizzato
+ attraverso il software open source Odoo 11.0.
+ Tale scelta è stata effettuata poichè grazie all'utilizzo di un sistema
+ ERP è possibile gestire tutte le informazioni relative all'azienda andando
+ ad utilizzare un database unico e centralizzato.
+ Quindi si offre una gestione più organizzata e produttiva di tali informazioni
+ al fine di migliorare l'esecuzione dei processi aziendali con lo scopo
+ di incrementare le vendite , i guadagni e ridurre invece gli sforzi economici
+ e produttivi.
+ Il sistema ERP risulta essere il sistema di gestione più adatto alla reingegner
+izzazione dei processi di business grazie alle sue caratteristiche di 
+\emph on
+unicità
+\emph default
+ dell'informazione, 
+\emph on
+estensione
+\emph default
+ ( il sistema è estendibile con nuovi moduli e quindi funzionalità ) e 
+\emph on
+modularità
+\emph default
+ ( il sistema è suddiviso in moduli facilmente componibili ).
+ La scelta del sistema ERP da utilizzare è ricaduta su ODOO poichè è un
+ software molto promettente, che come si può notare dal quadrante magico
+ di Gartner, risulta un software 
+\begin_inset Quotes eld
+\end_inset
+
+ leader 
+\begin_inset Quotes erd
+\end_inset
+
+ sul mercato grazie al suo facile utilizzo e per il suo supporto alle reali
+ esigenze delle aziende.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/GartnerOdoo.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Moduli Odoo
+\end_layout
+
+\begin_layout Standard
+Al fine di implementare un sitema di gestione che realizzi i nostri processi
+ di business sono stati installati i seguenti moduli:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/ModuliInstallati.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Inventario ( Inventory Management ) 
+\series default
+: utilizzato per garantire la corretta gestione delle scorte delle materie
+ prime nel magazzino.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vendite ( Sales Management )
+\series default
+ : utilizzato per gestire le vendite, generare e gestire preventivi , e
+ controllare lo stato degli ordini di vendita.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Acquisti ( Purchase Management ) 
+\series default
+: utilizzato per gestire gli ordini di acquisto dai vari fornitori.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Calendar 
+\series default
+: utilizzato per gestire gli appuntamenti con clienti e fornitori, e altri
+ eventi dell'azienda.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+CRM 
+\series default
+: utilizzato per gestire il rapporto con i clienti, le offerte proposte
+ e il loro stato di avanzamento.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+eCommerce / Website Builder 
+\series default
+: utilizzati per la creazione e gestione del sito eCommerce.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Discuss
+\series default
+ : utilizzo per la gestione delle comunicazioni con clienti e fornitori.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Contacts Directory 
+\series default
+: utilizzato per la gestione di una rubrica digitale.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Fatturazione ( Invoicing Management ) 
+\series default
+: utilizzato per la gestione delle fatture in ingresso e in uscita dell'azienda.
+\end_layout
+
+\begin_layout Subsubsection
+Gestione del processo Vendita prodotto
+\end_layout
+
+\begin_layout Standard
+Il processo di vendita di un prodotto era eseguito secondo due modalità
+ : 
+\end_layout
+
+\begin_layout Enumerate
+Attraverso un ordine ricevuto via email.
+\end_layout
+
+\begin_layout Enumerate
+Attraverso una consulenza presso il cliente.
+\end_layout
+
+\begin_layout Standard
+Entrambe le modalità comprendevano una trascrizione dell'ordine su dei registri
+ cartacei.
+ Tale processo è realizzato in Odoo grazie all'utilizzo in particolare dei
+ moduli di Sales Management e Discuss, i quali pemettono la gestione delle
+ vendite , della creazione e gestione di preventivi, e della comunicazione
+ con i clienti tramite email .
+ In particolare per quanto riguarda la prima modalità di vendita , essa
+ è realizzata grazie al modulo Discuss che permette la comunicazione con
+ il cliente , e grazie al modulo Sales Management che permette all'operatore
+ interno dell'azienda di creare un preventivo o un ordine di vendita .
+ Invece per quanto concerne alla seconda modalità di vendita, essa è supportata
+ in primo luogo dal modulo Calendar che permette di gestire in maniera digitale
+ tutti gli appuntamenti con i clienti , in quanto precedentemente tali appuntame
+nti erano gestiti in maniera disorganizzata e distribuita su diverse agende.
+ Con questo nuovo sistema un consulente dell'azienda si recherà presso il
+ cliente per una consulenza , previo appuntamento, fornito di Tablet grazie
+ al quale con il modulo Sales Management potrà gestire in maniera diretta
+ , digitalizzata e distribuita l'ordine o il preventivo per il cliente di
+ riferimento.
+ Di seguito sono riportati gli screeshots relativi all'esecuzione di tali
+ processi con il sistema Odoo :
+\end_layout
+
+\begin_layout Itemize
+Vendita tramite email.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/EmailVenditaProdotto.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ricezione email richiesta ordine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/Preventivo.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generazione preventivo per ordine richiesto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/InvioPreventivo.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Invio preventivo al cliente tramite email
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/RicezionePreventivo.PNG
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ricezione email con preventivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/PreventivoToOrdine.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preventivo accettato , creazione ordine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vendita prodotto con consulenza presso cliente.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ConsulenzaCalendar.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Consulenza prenotata nel nostro calendario digitale
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Inoltre per incrementare i guadagni , quindi le vendite , è stata introdotta
+ una nuova modalità di vendità, ovvero la vendita online tramite un sito
+ di eCommerce.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/Catalogo.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Catalogo online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/VenditaOnline.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prodotto 
+\begin_inset Quotes eld
+\end_inset
+
+frisbee
+\begin_inset Quotes erd
+\end_inset
+
+ acquistabile online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee2.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carrello online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee4.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Riepilogo ordine , comprese spese di spedizione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee6.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ordine creato in azienda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Gestione del processo Servizio Stampa
+\end_layout
+
+\begin_layout Standard
+Il processo di Servizio Stampa può essere visto come una sorta di processo
+ Vendita prodotto , con l'unica differenza che in questo caso il prodotto
+ sul quale stampare è fornito dal cliente stesso, il quale era solito contattare
+ l'azienda tramite email oppure tramite consulenza.
+ Tali modalità di acquisto sono state estese con la vendità online tramite
+ il sito eCommerce, dove è possibile acquistare un determinato numero di
+ stampe di uno specifico tipo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ServiziStampa.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Servizio stampa, sono prodotti del catalogo online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ServizioStampa.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Servizio di stampa digitale
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/AcquistoDigitale.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acquisto di un servizio stampa online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Gestione del processo Rappresentanza
+\end_layout
+
+\begin_layout Standard
+Il processo di Rappresentanza ha il compito di incrementare le vendite proponend
+o nuove offerte a clienti , o facendo pubblicità a potenziali clienti.
+ Tale processo era svolto in maniera totalmente casuale e senza il supporto
+ di nessuno strumento.
+ Per migliorare il profitto ricavato da tale processo è stato sfruttato
+ il modulo CRM , il quale ci permette una gestione sistematica delle offerte
+ da generare ai clienti, potendo gestire e tracciare tutto l'avanzamento
+ di una proposta.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generazione offerta per un cliente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm2.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Meeting fissato per gestire l'offerta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm3.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Creazione Meeting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm4.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Meeting salvato in calendario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm5.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+L'offerta è in fase di valutazione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm6.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Offerta accettata , generazione preventivo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm7.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Offerta portata a buon fine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/crm8.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preventivo aggiunto all'archivio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Gestione del processo Rifornimento merci
+\end_layout
+
+\begin_layout Standard
+Il processo di Rifornimento merci come dice stesso la parola si occupa di
+ ordinare le merci ai fornitori ogni qual volta si ritiene necessario, ovvero
+ a valle di un ordine o in determinati periodi dell'anno.
+ Tale processo è stato gestito grazie al modulo Purchase Management, il
+ quale permette una gestione di tutto il processo di riordino di merci.
+ Inoltre è stato utilizzato anche il modulo Inventory Management per offrire
+ uno strumento di supporto per gestire quello che è il magazzino, quindi
+ le relative scorte disponibili.
+\end_layout
+
+\begin_layout Itemize
+Processo di riordino di merci
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee12.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calcolo quantità necessaria da ordinare in automatico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee13.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generazione ordine per il fornitore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee14.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ordine in attesa di ricezione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/RicezioneOrdineFornitore.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ordine in ingresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/frisbee18.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fattura ordine ricevuto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Inventario
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/Inventario.PNG
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inventario dispobile in maniera automatica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 KPI: Key Performance Indicator
 \end_layout
 
