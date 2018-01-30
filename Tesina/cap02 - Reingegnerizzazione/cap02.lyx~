@@ -138,14 +138,18 @@ morecomment=[s]{--}
 
 \begin_body
 
+\begin_layout Standard
+In questo capitolo sono discusse le problematiche relative ai vari processi
+ aziendali individuati e quindi la necessità di una reingegnerizzazione.
+\end_layout
+
 \begin_layout Section
 Reingegnerizzazione dei processi aziendali
 \end_layout
 
 \begin_layout Standard
-In questo capitolo sono discusse le problematiche relative ai vari processi
- aziendali individuati e quindi la necessità di una reingegnerizzazione.
- In particolare si è ritenuto opportuno un intervento dei seguenti processi:
+In seguito ad un'analisi deell'azienda, si è ritenuto opportuno un intervento
+ sui seguenti processi:
 \end_layout
 
 \begin_layout Itemize
@@ -647,12 +651,12 @@ Form con cui il cliente avvia il processo, creando un nuovo ordine.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/form_descrizioneProdotto.PNG
-	scale 80
+	scale 85
 
 \end_inset
 
@@ -684,7 +688,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/form_sceltaProdotto.PNG
-	scale 80
+	scale 85
 
 \end_inset
 
@@ -1297,7 +1301,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/emailServer.PNG
-	scale 70
 
 \end_inset
 
@@ -1328,7 +1331,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/emailOrdineNonApprovato.PNG
-	scale 70
 
 \end_inset
 
@@ -1367,7 +1369,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename img/emailOrdineApprovato.PNG
-	scale 70
 
 \end_inset
 

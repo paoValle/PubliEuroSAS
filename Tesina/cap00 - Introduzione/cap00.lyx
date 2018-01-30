@@ -139,7 +139,77 @@ morecomment=[s]{--}
 \begin_body
 
 \begin_layout Standard
+In tale elaborato è stato documentato il lavoro svolto dall' A.M.P Solution
+ per la reingegnerizzazione del sistema informativo dell'azienda Publieuro
+ S.A.S.
+ Il gruppo è composto dai seguenti studenti : Galli Antonio, Gravina Michela,
+ Valletta Paolo.
+ 
+\end_layout
 
+\begin_layout Standard
+Il processo di reingegnerizzazione si è articolati in varie fasi:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Analisi aziendale e modellazione dei processi
+\emph default
+ (AS-IS), descritte nel Capitolo 1.
+ In tale capitolo viene descritta l'organizzazione dell'azienda con i vari
+ processi modellati con con Visual Paragim 14.2 utilizzando Activity Diagram,
+ Data Flow Diagram, Assembly Lines e Use Case Diagram e poi attraverso il
+ paradigma CRASO.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Modellazione e Simulazione del TO-BE
+\emph default
+, descritte nel Capitolo 2.
+ In tale capitolo viene descritto l'intervento proposto, modellando i vari
+ processi mediante il formalismo BMPN, utilizzando lo strumento BonitaBPM
+ Community 7.5.4, che ha permesso anche una simulazione.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Introduzione del sistema ERP ODOO
+\emph default
+, descritto nel Capitolo 3.
+ In tale capitolo viene mostrato come i processi aziendali sono adattati
+ all'ERP ODOO utilizzato.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Studio di fattibilità, descritto, 
+\emph default
+nel Capitolo 4: In tale capitolo è stata effettuata un'analisi dei processi
+ di business attraverso la valutazione dei KPI prima e dopo gli interventi.
+ Infine è stato presentato lo studio di fattibilità in cui sono analizzate
+ le varie proposte con caratteristiche e costi diversi.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Project Management
+\emph default
+, descritto nel Capitolo 5: In tale capitolo viene descritta la pianificazione
+ del progetto, evidenziando la tempistica delle varie attività.
+\end_layout
+
+\begin_layout Standard
+Buona Lettura.
+ 
 \end_layout
 
 \end_body

@@ -169,7 +169,7 @@ i di tutti i giorni.
 \series bold
 corsi di formazione
 \series default
- per gli operai ed in particolare la proprietaria.
+ per gli operai ed in particolare per la proprietaria.
  Quest'ultima infatti è stata abbastanza refrattaria sul voler assumere
  nuovo personale, per cui ha deciso di voler prendere lei in mano la gestione
  e l'utilizzo di alcune risorse informatiche installate, senza volersi affidare
@@ -184,7 +184,7 @@ Soluzione 1
 La prima soluzione prevede il potenziamento dell'attuale sistema informatico
  su cui si basa l'azienda, vertendo in particolare sulll'ampliamento della
  gestione tramite il software Invoicex.
- Questo, infatti, presenta diversi tipo di versioni, che permettono un'integrazi
+ Questo, infatti, presenta diversi tipi di versioni, che permettono un'integrazi
 one di raggio più ampio dei vari processi di business.
  Sarà proposto l'acquisto, dunque, di una licenza d'uso e la somministrazione
  di corsi di formazione per i dipendenti e il proprietario dell'azienda,
@@ -204,7 +204,7 @@ Vediamo di seguito le tabelle riassuntive di HW/SW e risorse umane proposte:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -387,7 +387,7 @@ Riassunto strumenti hw/sw necessari
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -726,7 +726,7 @@ Vediamo di seguito le tabelle riassuntive di HW/SW e risorse umane proposte:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -967,7 +967,7 @@ Riassunto strumenti hw/sw necessari
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1224,7 +1224,7 @@ Cronoprogramma dei lavori
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1671,7 +1671,7 @@ Social Media Manager
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corso di formazione per la proprietariaCreazione pagine social
+Corso di formazione per la proprietaria + Creazione pagine social
 \end_layout
 
 \end_inset
@@ -1899,11 +1899,7 @@ Insieme ai costi delle varie soluzioni, è stata presentata al cliente anche
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics

@@ -403,7 +403,7 @@ Sistema informatico: OpenERP
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "cap03/cap03.lyx"
+filename "cap03 - ERP/cap03.lyx"
 
 \end_inset
 
@@ -417,7 +417,21 @@ Nome capitolo
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "cap04/cap04.lyx"
+filename "cap04 - Studio di fattibilità/cap04.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Project Management
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "cap5 - Project Management/cap05.lyx"
 
 \end_inset
 

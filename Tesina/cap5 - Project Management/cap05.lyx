@@ -138,6 +138,10 @@ morecomment=[s]{--}
 
 \begin_body
 
+\begin_layout Section
+Project Management
+\end_layout
+
 \begin_layout Standard
 In questo capitolo viene analizzata la gestione del progetto relativa al
  prototipo presentato.

@@ -169,7 +169,7 @@ i di tutti i giorni.
 \series bold
 corsi di formazione
 \series default
- per gli operai ed in particolare la proprietaria.
+ per gli operai ed in particolare per la proprietaria.
  Quest'ultima infatti è stata abbastanza refrattaria sul voler assumere
  nuovo personale, per cui ha deciso di voler prendere lei in mano la gestione
  e l'utilizzo di alcune risorse informatiche installate, senza volersi affidare
@@ -184,7 +184,7 @@ Soluzione 1
 La prima soluzione prevede il potenziamento dell'attuale sistema informatico
  su cui si basa l'azienda, vertendo in particolare sulll'ampliamento della
  gestione tramite il software Invoicex.
- Questo, infatti, presenta diversi tipo di versioni, che permettono un'integrazi
+ Questo, infatti, presenta diversi tipi di versioni, che permettono un'integrazi
 one di raggio più ampio dei vari processi di business.
  Sarà proposto l'acquisto, dunque, di una licenza d'uso e la somministrazione
  di corsi di formazione per i dipendenti e il proprietario dell'azienda,
@@ -204,7 +204,7 @@ Vediamo di seguito le tabelle riassuntive di HW/SW e risorse umane proposte:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -387,7 +387,7 @@ Riassunto strumenti hw/sw necessari
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -726,7 +726,7 @@ Vediamo di seguito le tabelle riassuntive di HW/SW e risorse umane proposte:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -967,7 +967,7 @@ Riassunto strumenti hw/sw necessari
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1224,7 +1224,7 @@ Cronoprogramma dei lavori
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1899,7 +1899,7 @@ Insieme ai costi delle varie soluzioni, è stata presentata al cliente anche
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1931,6 +1931,36 @@ Riassunto analisi dei rischi
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Di seguito riassumiamo e spieghiamo i rischi individuati per ogni soluzione:
+\end_layout
+
+\begin_layout Itemize
+La sol.1 soffre di rischi dovuti ad una interruzione di corrente, dato che
+ non prevede alcun uso di UPS, oppure dovuti alla rottura del computer «centrale
+», senza il quale il software Invoicex non può essere di supporto.
+ 
+\end_layout
+
+\begin_layout Itemize
+La sol.2 presenta problemi in caso in di fallimenti del computer «centrale»,
+ su cui gira Odoo come server locale, oppure in caso di scarsa manutenzione
+ all’ERP e i suoi moduli, che andrebbero aggiornati di tanto in tanto per
+ rimanere al passo con i tempi (vedi modifiche legislazione).
+ 
+\end_layout
+
+\begin_layout Itemize
+La sol.3, dato che sposta il focus sui server remoti di Odoo, comporta rischi
+ legati all’assenza di rete internet, hacking dei dati (memorizzati sui
+ server di Odoo) e abbandono per scarsa manutenzione (vedi sol.2), anche
+ se quest’ultima è più semplice del caso della sol.2.
+ A suo favore, però, è da menzionare il sollevamento di responsabilità dell’azie
+nda sulla gestione dei dati e del server locale, nonché la possibilità di
+ accedere al proprio sistema ERP da remoto da qualsiasi macchina.
+ 
 \end_layout
 
 \end_body
