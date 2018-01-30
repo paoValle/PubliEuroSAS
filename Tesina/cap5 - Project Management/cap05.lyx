@@ -138,10 +138,6 @@ morecomment=[s]{--}
 
 \begin_body
 
-\begin_layout Section
-Project Management
-\end_layout
-
 \begin_layout Standard
 In questo capitolo viene analizzata la gestione del progetto relativa al
  prototipo presentato.
@@ -175,7 +171,7 @@ Controllo
 : Come ne verrà controllato l'avanzamento?
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Pianificazione del progetto
 \end_layout
 
@@ -303,7 +299,7 @@ I software Bonita, Visual Paradigm, Lyx, Odoo, Git.
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
+\begin_layout Section
 Programmazione del progetto
 \end_layout
 
@@ -376,7 +372,7 @@ re le principali caratteristiche del progetto.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Controllo del progetto
 \end_layout
 
